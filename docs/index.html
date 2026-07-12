@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grok Analysis Seeds • Neon Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+        :root {
+            --neon-green: #00ff88;
+            --neon-cyan: #00f0ff;
+        }
+        body {
+            background: #001100;
+            color: #aaffaa;
+            font-family: 'VT323', monospace;
+        }
+        .neon-text {
+            text-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green), 0 0 40px var(--neon-cyan);
+            animation: pulse 2s infinite alternate;
+        }
+        @keyframes pulse {
+            from { text-shadow: 0 0 5px var(--neon-green); }
+            to { text-shadow: 0 0 30px var(--neon-cyan), 0 0 60px var(--neon-green); }
+        }
+        .grid-bg {
+            background: linear-gradient(#002200 1px, transparent 1px), linear-gradient(90deg, #002200 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="grid-bg min-h-screen p-8">
+    <div class="max-w-6xl mx-auto">
+        <h1 class="neon-text text-6xl text-center mb-8">GROK ANALYSIS SEEDS</h1>
+        <p class="text-center text-2xl mb-12">Neon Grid Toolkit for Truth-Seeking • Universe Understanding • xAI Aligned</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Cards for dashboard flair -->
+            <div class="bg-[#002200] border border-[#00ff88] p-6 rounded-xl neon-glow">
+                <h2 class="text-[#00f0ff] text-xl">MISSION CORE</h2>
+                <p>Decode reality. Pipelines for cosmology, physics reasoning, Grok integrations.</p>
+            </div>
+            <div class="bg-[#002200] border border-[#00ff88] p-6 rounded-xl neon-glow">
+                <h2 class="text-[#00f0ff] text-xl">LIVE DEMOS</h2>
+                <p>Analysis utils • Reasoning templates • Synthwave dashboards incoming.</p>
+            </div>
+            <div class="bg-[#002200] border border-[#00ff88] p-6 rounded-xl neon-glow">
+                <h2 class="text-[#00f0ff] text-xl">INFRA STACK</h2>
+                <p>Built to run on robust foundations (Rust, Docker, Ansible vibes).</p>
+            </div>
+        </div>
+        
+        <div class="mt-12 text-center">
+            <a href="https://github.com/ReplicantZulu/grok-analysis-seeds" class="inline-block bg-[#001100] border-2 border-[#00ff88] text-[#00ff88] px-8 py-4 text-xl hover:bg-[#00ff88] hover:text-black transition-all">ENTER THE GRID →</a>
+        </div>
+    </div>
+</body>
+</html>
